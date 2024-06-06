@@ -1,3 +1,65 @@
-h1 {
-  font-size: large;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.topnav {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  align-items: center;
+  justify-content: start;
+  background-color: grey;
+}
+.topnav img {
+  width: 10%;
+}
+.topnav .links {
+  padding-left: 3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  padding: 5rem;
+  background-color: #660000;
+  border-radius: 10rem;
+  margin-top: 5rem;
+}
+.header p {
+  padding: 0.5rem;
+  color: white;
+}
+.header img {
+  width: 20rem;
+  height: 16rem;
+}
+.header .description {
+  animation: fade-down 0.5s;
+  display: flex;
+}
+.header .btn-3,
+.header .btn-2,
+.header .btn-1 {
+  padding: 0.25rem 0.5rem;
+  border: 2px solid #000;
+  border-radius: 6px;
+  animation: fade-down 0.5s;
+}
+
+.images {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+}
+.images img {
+  display: flex;
+  width: 18rem;
+  height: 14rem;
 }/*# sourceMappingURL=style.css.map */

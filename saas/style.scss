@@ -1,0 +1,62 @@
+@import "./partials/reset";
+@import "./partials/color";
+@import "./partials/font";
+@import "./partials/spacing";
+@import "./partials/buttons";
+@import "./partials/mixin";
+@import "./partials/animation";
+
+.topnav {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: start;
+    background-color: grey;
+    img {
+      width: 10%;
+    }
+    .links {
+      padding-left: 3rem;
+      text-decoration: none;
+      color: black;
+    }
+  }
+  
+  .header {
+    padding: 5rem;
+    background-color: $bg-hero;
+    border-radius: 10rem;
+    margin-top: 5rem;
+  
+    p {
+      padding: 0.5rem;
+      color: $testo;
+    }
+    img {
+      width: 20rem;
+      height: 16rem;
+    }
+    .description {
+      animation: fade-down 0.5s;
+      display: flex;
+    }
+    .btn-3,
+    .btn-2,
+    .btn-1 {
+      padding: 0.25rem 0.5rem;
+      border: 2px solid #000;
+      border-radius: 6px;
+      animation: fade-down 0.5s;
+    }
+  }
+  .images {
+    flex-direction: row;
+    @include flex-container();
+    padding-top: 1rem;
+    img {
+      display: flex;
+      width: 18rem;
+      height: 14rem;
+    }
+  }
